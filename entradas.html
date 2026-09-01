@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>
+ART CANOS | Entradas
+</title>
+
+<link rel="stylesheet" href="css/estilo.css">
+
+</head>
+
+
+<body>
+
+
+<header class="top">
+
+<img src="./img/logo.jpg">
+
+<div>
+
+<h1>
+Entradas ART CANOS
+</h1>
+
+<p>
+Ingreso de materiales a fábrica
+</p>
+
+</div>
+
+</header>
+
+
+
+<div class="contenedor">
+
+
+<h2>
+📥 Registrar Entrada
+</h2>
+
+
+
+<div class="formulario">
+
+<select id="categoria" onchange="cargarMateriales()">
+    <option value="">Seleccione categoría</option>
+</select>
+
+<div class="buscador-material">
+
+    <input
+        type="text"
+        id="materialBusqueda"
+        placeholder="Buscar material..."
+        autocomplete="off"
+        disabled
+    >
+
+    <input
+        type="hidden"
+        id="material"
+        value=""
+    >
+
+    <div
+        id="listaMateriales"
+        class="lista-materiales"
+    ></div>
+
+</div>
+<input 
+id="cantidad"
+type="number"
+placeholder="Cantidad ingresada">
+
+
+
+<input 
+id="responsable"
+placeholder="Responsable">
+
+
+
+<input 
+id="observacion"
+placeholder="Observación">
+
+
+
+<button onclick="registrarEntrada()">
+
+REGISTRAR ENTRADA
+
+</button>
+
+
+
+</div>
+
+
+
+<h2>
+Historial de entradas
+</h2>
+
+
+
+<table>
+
+
+<thead>
+
+<tr>
+
+<th>Material</th>
+
+<th>Cantidad</th>
+
+<th>Responsable</th>
+
+<th>Observación</th>
+<th>Usuario</th>
+
+<th>Fecha</th>
+
+</tr>
+
+</thead>
+
+
+
+<tbody id="tablaEntradas">
+
+
+</tbody>
+
+
+</table>
+
+
+
+</div>
+
+
+
+<script src="js/entradas.js"></script>
+
+
+</body>
+
+</html>

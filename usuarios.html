@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>
+ART CANOS | Usuarios
+</title>
+
+<link rel="stylesheet" href="css/estilo.css">
+
+</head>
+
+
+<body>
+
+
+<header class="top">
+
+<img src="./img/logo.jpg">
+
+<div>
+
+<h1>
+Usuarios ART CANOS
+</h1>
+
+<p>
+Administración de encargados
+</p>
+
+</div>
+
+</header>
+
+
+
+<div class="contenedor">
+
+
+<h2>
+👥 Registrar usuario
+</h2>
+
+
+
+<div class="formulario">
+
+
+<input 
+id="nombre"
+placeholder="Nombre del usuario">
+
+
+
+<input 
+id="usuario"
+placeholder="Usuario de acceso">
+
+
+
+<input 
+id="clave"
+placeholder="Contraseña">
+
+
+
+<select id="rol" onchange="mostrarCategorias()">
+    <option>Administrador</option>
+    <option>Encargado</option>
+</select>
+
+<div id="contenedorCategorias" style="display:none; margin-top:15px;">
+
+    <label><strong>Categorías permitidas para este encargado:</strong></label>
+
+    <div id="listaCategorias" style="margin-top:10px;">
+    </div>
+
+</div>
+
+
+<button onclick="guardarUsuario()">
+
+GUARDAR USUARIO
+
+</button>
+
+
+</div>
+
+
+
+
+<h2>
+Usuarios registrados
+</h2>
+
+
+
+<table>
+
+
+<thead>
+
+<tr>
+
+<th>Nombre</th>
+
+<th>Usuario</th>
+
+<th>Rol</th>
+
+</tr>
+
+</thead>
+
+
+
+<tbody id="tablaUsuarios">
+
+</tbody>
+
+
+</table>
+
+
+</div>
+
+
+
+<script src="js/usuarios.js"></script>
+
+
+</body>
+
+</html>

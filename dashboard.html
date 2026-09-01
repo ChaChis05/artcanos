@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>
+Dashboard ART CANOS
+</title>
+
+<link rel="stylesheet" href="css/estilo.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+
+<img src="img/logo.jpg" alt="ART CANOS">
+
+
+<div>
+
+
+<h1>
+Inventario ART CANOS
+</h1>
+
+
+<p id="bienvenida">
+</p>
+
+
+
+<button onclick="cerrarSesion()" class="btn-salir">
+
+🚪 Cerrar sesión
+
+</button>
+
+
+</div>
+
+
+</header>
+
+
+
+
+
+<!-- PANEL PRINCIPAL -->
+
+
+<div class="panel">
+
+
+
+<div class="card" onclick="location.href='materiales.html'">
+
+<h3>
+📦 Materiales
+</h3>
+
+<p>
+Control de inventario
+</p>
+
+</div>
+
+
+
+
+
+<div class="card" onclick="location.href='entradas.html'">
+
+<h3>
+📥 Entradas
+</h3>
+
+<p>
+Registrar ingresos
+</p>
+
+</div>
+
+
+
+
+
+<div class="card" onclick="location.href='salidas.html'">
+
+<h3>
+📤 Salidas
+</h3>
+
+<p>
+Material utilizado
+</p>
+
+</div>
+
+
+
+
+
+<div class="card" onclick="location.href='stock.html'">
+
+<h3>
+📊 Stock
+</h3>
+
+<p>
+Estado actual
+</p>
+
+</div>
+
+
+
+
+
+<div class="card" onclick="location.href='movimientos.html'">
+
+<h3>
+📜 Movimientos
+</h3>
+
+<p>
+Historial del sistema
+</p>
+
+</div>
+
+
+
+
+
+<div class="card usuarios-card" onclick="location.href='usuarios.html'">
+
+<h3>
+👥 Usuarios
+</h3>
+
+<p>
+Administración
+</p>
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+<!-- ESTADISTICAS -->
+
+
+<section class="estadisticas">
+
+
+<h2>
+📊 Resumen del Inventario
+</h2>
+
+
+
+<div class="estad-grid">
+
+
+
+
+
+<div class="estad-card">
+
+<h2 id="totalMateriales">
+0
+</h2>
+
+<p>
+📦 Materiales registrados
+</p>
+
+</div>
+
+
+
+
+
+<div class="estad-card">
+
+<h2 id="totalStock">
+0
+</h2>
+
+<p>
+📊 Unidades en inventario
+</p>
+
+</div>
+
+
+
+
+
+<div class="estad-card">
+
+<h2 id="totalEntradas">
+0
+</h2>
+
+<p>
+📥 Entradas
+</p>
+
+</div>
+
+
+
+
+
+<div class="estad-card">
+
+<h2 id="totalSalidas">
+0
+</h2>
+
+<p>
+📤 Salidas
+</p>
+
+</div>
+
+
+
+
+
+<div class="estad-card">
+
+<h2 id="stockBajo">
+0
+</h2>
+
+<p>
+⚠️ Bajo mínimo
+</p>
+
+</div>
+
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<script src="js/dashboard.js"></script>
+
+
+</body>
+
+</html>
+

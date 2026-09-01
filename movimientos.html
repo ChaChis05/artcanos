@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>
+Movimientos ART CANOS
+</title>
+
+<link rel="stylesheet" href="css/estilo.css">
+
+</head>
+
+
+<body>
+
+
+<header class="top">
+
+<img src="img/logo.jpg">
+
+<div>
+
+<h1>
+Movimientos ART CANOS
+</h1>
+
+<p>
+Historial general de inventario
+</p>
+
+</div>
+
+</header>
+
+
+
+<div class="contenedor">
+
+
+<h2>
+📜 Historial de movimientos
+</h2>
+
+
+
+<!-- ===============================
+     FILTRO DE CATEGORÍA
+================================ -->
+
+<select id="categoria">
+
+    <option value="">
+        Seleccione categoría
+    </option>
+
+</select>
+
+
+
+<!-- ===============================
+     BUSCADOR DE MATERIAL
+================================ -->
+
+<div class="buscador-material">
+
+    <input
+        type="text"
+        id="materialBusqueda"
+        placeholder="Buscar material..."
+        autocomplete="off"
+        disabled
+    >
+
+</div>
+
+
+
+<!-- ===============================
+     TABLA DE MOVIMIENTOS
+================================ -->
+
+<table>
+
+
+<thead>
+
+<tr>
+
+<th>Fecha</th>
+
+<th>Tipo</th>
+
+<th>Material</th>
+
+<th>Cantidad</th>
+
+<th>Entregado a</th>
+
+<th>Registró</th>
+
+</tr>
+
+
+</thead>
+
+
+
+<tbody id="tablaMovimientos">
+
+
+</tbody>
+
+
+</table>
+
+
+
+</div>
+
+
+
+<script src="js/movimientos.js"></script>
+
+
+</body>
+
+</html>

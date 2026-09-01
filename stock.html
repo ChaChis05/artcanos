@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>
+ART CANOS | Stock
+</title>
+
+<link rel="stylesheet" href="css/estilo.css">
+
+</head>
+
+
+<body>
+
+
+<header class="top">
+
+<img src="./img/logo.jpg">
+
+<div>
+
+<h1>
+Stock ART CANOS
+</h1>
+
+<p>
+Estado actual de materiales
+</p>
+
+</div>
+
+</header>
+
+
+
+<div class="contenedor">
+
+
+<h2>
+📊 Inventario Actual
+</h2>
+
+
+<div class="resumen-stock">
+
+
+<div class="card">
+
+<h2 id="total">
+0
+</h2>
+
+<p>
+📦 Total materiales
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h2 id="disponibles">
+0
+</h2>
+
+<p>
+🟢 Disponibles
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h2 id="bajos">
+0
+</h2>
+
+<p>
+🟡 Bajo mínimo
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h2 id="agotados">
+0
+</h2>
+
+<p>
+🔴 Agotados
+</p>
+
+</div>
+
+
+</div>
+
+
+
+<br>
+
+
+<!-- ===============================
+     FILTRO DE CATEGORÍA
+================================ -->
+
+<select id="categoria" onchange="filtrarStock()">
+
+    <option value="">
+        Seleccione categoría
+    </option>
+
+</select>
+
+
+
+<!-- ===============================
+     BUSCADOR DE MATERIAL
+================================ -->
+
+<div class="buscador-material">
+
+    <input
+        type="text"
+        id="materialBusqueda"
+        placeholder="Buscar material..."
+        autocomplete="off"
+        disabled
+    >
+
+</div>
+
+
+
+<!-- ===============================
+     TABLA DE STOCK
+================================ -->
+
+<table>
+
+
+<thead>
+
+<tr>
+
+<th>Material</th>
+
+<th>Categoría</th>
+
+<th>Unidad</th>
+
+<th>Stock</th>
+
+<th>Estado</th>
+
+</tr>
+
+
+</thead>
+
+
+
+<tbody id="tablaStock">
+
+
+</tbody>
+
+
+</table>
+
+
+
+</div>
+
+
+
+<script src="js/stock.js"></script>
+
+
+</body>
+
+</html>

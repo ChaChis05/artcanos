@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>
+ART CANOS | Materiales
+</title>
+
+<link rel="stylesheet" href="css/estilo.css">
+
+</head>
+
+
+<body>
+
+
+<header class="top">
+
+<img src="./img/logo.jpg">
+
+<div>
+
+<h1>
+Materiales ART CANOS
+</h1>
+
+<p>
+Inventario interno de fábrica
+</p>
+
+</div>
+
+</header>
+
+
+
+<div class="contenedor">
+
+
+<h2>
+📦 Registrar Material
+</h2>
+
+
+<div class="formulario" id="formularioMaterial">
+
+
+<input 
+id="nombre"
+placeholder="Nombre del material">
+
+
+<input 
+id="categoria"
+placeholder="Categoría">
+
+
+<input 
+id="unidad"
+placeholder="Unidad de medida">
+
+
+<input 
+id="stock"
+type="number"
+placeholder="Stock inicial">
+
+
+<input 
+id="minimo"
+type="number"
+placeholder="Stock mínimo">
+
+
+<button onclick="guardarMaterial()">
+
+GUARDAR MATERIAL
+
+</button>
+
+
+</div>
+
+
+
+<h2>
+Listado de materiales
+</h2>
+
+
+
+<table>
+
+
+<thead>
+
+<tr>
+
+
+<th>Material</th>
+
+<th>Categoría</th>
+
+<th>Stock</th>
+
+<th>Estado</th>
+
+
+</tr>
+
+</thead>
+
+
+
+<tbody id="tablaMateriales">
+
+
+</tbody>
+
+
+</table>
+
+
+</div>
+
+
+
+<script src="js/materiales.js"></script>
+
+
+</body>
+
+</html>

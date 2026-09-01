@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>
+ART CANOS | Salidas
+</title>
+
+<link rel="stylesheet" href="css/estilo.css">
+
+</head>
+
+
+<body>
+
+
+<header class="top">
+
+<img src="./img/logo.jpg">
+
+<div>
+
+<h1>
+Salidas ART CANOS
+</h1>
+
+<p>
+Material utilizado en fabricación
+</p>
+
+</div>
+
+</header>
+
+
+
+<div class="contenedor">
+
+
+<h2>
+📤 Registrar salida
+</h2>
+
+
+
+<div class="formulario">
+
+
+<select id="categoria" onchange="cargarMateriales()">
+
+<option value="">
+Seleccione categoría
+</option>
+
+</select>
+
+
+<div class="buscador-material">
+
+    <input
+        type="text"
+        id="materialBusqueda"
+        placeholder="Buscar material..."
+        autocomplete="off"
+        disabled
+    >
+
+    <input
+        type="hidden"
+        id="material"
+        value=""
+    >
+
+    <div
+        id="listaMateriales"
+        class="lista-materiales"
+    ></div>
+
+</div>
+
+
+
+<input 
+id="cantidad"
+type="number"
+placeholder="Cantidad utilizada">
+
+
+
+<input 
+id="entregado"
+placeholder="Entregado a (persona que recibe material)">
+
+
+
+<input 
+id="observacion"
+placeholder="Observación">
+
+
+
+<button onclick="registrarSalida()">
+
+REGISTRAR SALIDA
+
+</button>
+
+
+
+</div>
+
+
+
+<h2>
+Historial de salidas
+</h2>
+
+
+
+<table>
+
+
+<thead>
+
+<tr>
+
+<th>Material</th>
+
+<th>Cantidad</th>
+
+<th>Entregado a</th>
+
+<th>Registró</th>
+
+<th>Observación</th>
+
+<th>Usuario</th>
+
+<th>Fecha</th>
+
+</tr>
+
+</thead>
+
+
+
+<tbody id="tablaSalidas">
+
+</tbody>
+
+
+</table>
+
+
+</div>
+
+
+
+<script src="js/salidas.js"></script>
+
+
+</body>
+
+</html>
